@@ -112,8 +112,9 @@ body {
 }
 
 #top-menu > div {
-    margin: 15px;
+    margin: 25px;
     color: white;
+    cursor: pointer;
     
 }
 
@@ -142,4 +143,5 @@ body {
     font-size: 5rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    max-width: 400px;
 }
