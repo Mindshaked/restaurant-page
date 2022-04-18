@@ -1,14 +1,24 @@
 const homePage = function loadHomePage(){
     const content = document.getElementById("content");
 
-    const landingImage = content.createElement('div');
+    const landingImage = document.createElement("div");
     landingImage.setAttribute("id", "landing-image")
 
-    const headline = content.createElement('div');
+    const headline = document.createElement("div");
     headline.setAttribute("id", "headline");
-    headline.innerHTML = "OriginalJapaneseCousine"
+    
+    const headline1 = document.createElement("div");
+    headline1.innerHTML = "Original"
+    const headline2 = document.createElement("div");
+    headline2.innerHTML = "Japanese"
+    const headline3 = document.createElement("div");
+    headline3.innerHTML = "Cousine"
 
-    content.appendChild(landingImage, headline);
+    headline.appendChild(headline1);
+    headline.appendChild(headline2);
+    headline.appendChild(headline3);
+    content.appendChild(landingImage);
+    content.appendChild(headline);
 
     console.log("the function works")
 }
