@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("hello, this is working!"),function(){const e=document.getElementById("content"),t=e.createElement("div");t.setAttribute("id","landing-image");const n=e.createElement("div");n.setAttribute("id","headline"),n.innerHTML="OriginalJapaneseCousine",e.appendChild(t,n),console.log("the function works")}()})();
