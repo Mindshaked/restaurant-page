@@ -3,6 +3,10 @@ const menuPage = function loadMenuPage(){
 
     const menuTitle = document.createElement("div");
     menuTitle.setAttribute("id", "menu-title")
+    menuTitle.innerHTML = "Our Menu"
+
+    const menuContent = document.createElement("div");
+    menuContent.setAttribute("id", "menu-container");
 
     const menuMeals = document.createElement("div");
     menuMeals.setAttribute("id", "menu-meals");
@@ -13,6 +17,8 @@ const menuPage = function loadMenuPage(){
     const mItem1Desc = document.createElement("div");
     mItem1Desc.innerHTML = "Fresh Tuna"
     mItem1.classList.add("menu-item")
+    mItem1Title.classList.add("menu-item-title")
+    mItem1Desc.classList.add("menu-item-desc")
    
     const mItem2 = document.createElement("div");
     const mItem2Title = document.createElement("div");
@@ -20,6 +26,8 @@ const menuPage = function loadMenuPage(){
     const mItem2Desc = document.createElement("div");
     mItem2Desc.innerHTML = "Fresh Salmon"
     mItem2.classList.add("menu-item")
+    mItem2Title.classList.add("menu-item-title")
+    mItem2Desc.classList.add("menu-item-desc")
 
     const mItem3 = document.createElement("div");
     const mItem3Title = document.createElement("div");
@@ -27,6 +35,8 @@ const menuPage = function loadMenuPage(){
     const mItem3Desc = document.createElement("div");
     mItem3Desc.innerHTML = "Escolar fish with Green onions & Mustard Dressing"
     mItem3.classList.add("menu-item")
+    mItem3Title.classList.add("menu-item-title")
+    mItem3Desc.classList.add("menu-item-desc")
 
     const mItem4 = document.createElement("div");
     const mItem4Title = document.createElement("div");
@@ -34,6 +44,8 @@ const menuPage = function loadMenuPage(){
     const mItem4Desc = document.createElement("div");
     mItem4Desc.innerHTML = "Fresh Halibut with Green Onions, Lemon Juice and Sea Salt"
     mItem4.classList.add("menu-item")
+    mItem4Title.classList.add("menu-item-title")
+    mItem4Desc.classList.add("menu-item-desc")
 
     const mItem5 = document.createElement("div");
     const mItem5Title = document.createElement("div");
@@ -41,6 +53,8 @@ const menuPage = function loadMenuPage(){
     const mItem5Desc = document.createElement("div");
     mItem5Desc.innerHTML = "House Marinated Mackerel with Vinegar"
     mItem5.classList.add("menu-item")
+    mItem5Title.classList.add("menu-item-title")
+    mItem5Desc.classList.add("menu-item-desc")
 
     const mItem6 = document.createElement("div");
     const mItem6Title = document.createElement("div");
@@ -48,6 +62,8 @@ const menuPage = function loadMenuPage(){
     const mItem6Desc = document.createElement("div");
     mItem6Desc.innerHTML = "Flying Fish Egg"
     mItem6.classList.add("menu-item")
+    mItem6Title.classList.add("menu-item-title")
+    mItem6Desc.classList.add("menu-item-desc")
 
     const mItem7 = document.createElement("div");
     const mItem7Title = document.createElement("div");
@@ -55,6 +71,8 @@ const menuPage = function loadMenuPage(){
     const mItem7Desc = document.createElement("div");
     mItem7Desc.innerHTML = "Baked Fresh Water Eel with Eel Sauce"
     mItem7.classList.add("menu-item")
+    mItem7Title.classList.add("menu-item-title")
+    mItem7Desc.classList.add("menu-item-desc")
 
     const mItem8 = document.createElement("div");
     const mItem8Title = document.createElement("div");
@@ -62,6 +80,8 @@ const menuPage = function loadMenuPage(){
     const mItem8Desc = document.createElement("div");
     mItem8Desc.innerHTML = "Japanese Omelette"
     mItem8.classList.add("menu-item")
+    mItem8Title.classList.add("menu-item-title")
+    mItem8Desc.classList.add("menu-item-desc")
 
     const mItem9 = document.createElement("div");
     const mItem9Title = document.createElement("div");
@@ -69,6 +89,8 @@ const menuPage = function loadMenuPage(){
     const mItem9Desc = document.createElement("div");
     mItem9Desc.innerHTML = "House Marinated Salmon Egg with Soy Sauce & Mirin"
     mItem9.classList.add("menu-item")
+    mItem9Title.classList.add("menu-item-title")
+    mItem9Desc.classList.add("menu-item-desc")
 
     const mItem10 = document.createElement("div");
     const mItem10Title = document.createElement("div");
@@ -76,6 +98,8 @@ const menuPage = function loadMenuPage(){
     const mItem10Desc = document.createElement("div");
     mItem10Desc.innerHTML = "Fatty Yellowtail Belly"
     mItem10.classList.add("menu-item")
+    mItem10Title.classList.add("menu-item-title")
+    mItem10Desc.classList.add("menu-item-desc")
 
 
 
@@ -112,7 +136,8 @@ const menuPage = function loadMenuPage(){
     mItem10.appendChild(mItem10Desc);
 
     content.appendChild(menuTitle);
-    content.appendChild(menuMeals);
+    content.appendChild(menuContent);
+    menuContent.appendChild(menuMeals);
 
     console.log("the function works")
 }
