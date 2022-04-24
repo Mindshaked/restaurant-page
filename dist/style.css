@@ -101,14 +101,12 @@ body {
 }
 
 #top-menu {
-    grid-column: 0 / 1;
-    grid-row: 0 / 1;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #top-menu > div {
@@ -116,6 +114,10 @@ body {
     color: white;
     cursor: pointer;
     
+}
+
+#top-menu > div:hover {
+    text-decoration-line: underline;
 }
 
 #content {

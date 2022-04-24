@@ -146,4 +146,5 @@ const menuPage = function loadMenuPage(){
     console.log("the function works")
 }
 
+
 export {menuPage};
