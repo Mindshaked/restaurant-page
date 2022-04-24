@@ -167,6 +167,7 @@ body {
     width: 600px;
     font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
+  
     
 }
 
@@ -184,14 +185,22 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 150px;
+    justify-self: center;
   
 }
 
-#menu-container {
+#menu-content {
     display: flex;
     justify-content: center;
+    
 }
 
 .menu-item-desc {
     font-size: 0.9em;
+}
+
+#menu-container {
+    background-image: url("img/menu-bg.jpg");
+    height: 100%;
 }
