@@ -1,12 +1,15 @@
 const menuPage = function loadMenuPage(){
     const content = document.getElementById("content");
 
+    const menuContainer = document.createElement("div");
+    menuContainer.setAttribute("id", "menu-container");
+
     const menuTitle = document.createElement("div");
     menuTitle.setAttribute("id", "menu-title")
     menuTitle.innerHTML = "Our Menu"
 
     const menuContent = document.createElement("div");
-    menuContent.setAttribute("id", "menu-container");
+    menuContent.setAttribute("id", "menu-content");
 
     const menuMeals = document.createElement("div");
     menuMeals.setAttribute("id", "menu-meals");
@@ -135,8 +138,9 @@ const menuPage = function loadMenuPage(){
     mItem10.appendChild(mItem10Title);
     mItem10.appendChild(mItem10Desc);
 
-    content.appendChild(menuTitle);
-    content.appendChild(menuContent);
+    content.appendChild(menuContainer);
+    menuContainer.appendChild(menuTitle);
+    menuContainer.appendChild(menuContent);
     menuContent.appendChild(menuMeals);
 
     console.log("the function works")
