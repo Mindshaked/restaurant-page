@@ -145,3 +145,53 @@ body {
     font-weight: 300;
     max-width: 400px;
 }
+
+
+#menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 140px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 15px;
+    
+}
+
+#menu-meals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 500px;
+    width: 600px;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    
+}
+
+.menu-item-title {
+   font-weight: 600;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 1.1em;
+  
+}
+
+.menu-item {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+#menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item-desc {
+    font-size: 0.9em;
+}
