@@ -206,3 +206,61 @@ body {
     background-image: url("img/menu-bg.jpg");
     height: 100%;
 }
+
+#contact-container {
+    background-color: #202020;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#contact-image{
+    background-image: url("img/contact-image.jpg");
+    height: 500px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+#contact-box {
+    display: flex;
+    
+}
+
+#text-container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#text-container > button {
+    width: 100px;
+    transform: translateY(30px);
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    border: 1px solid black;
+    padding: 7px;
+    background-color: rgb(255, 194, 115);
+    font-weight: 600;
+}
+
+#text-container > button:hover {
+    background-color: rgb(212, 137, 38);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#address-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
